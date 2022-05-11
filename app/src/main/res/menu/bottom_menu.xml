@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Tasks"
+        android:id="@+id/show_tasks"
+        android:icon="@drawable/ic_baseline_list_alt_24"/>
+
+    <item
+        android:title="Calendar"
+        android:id="@+id/show_calendar"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        />
+
+</menu>

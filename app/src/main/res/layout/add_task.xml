@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".-"
+    android:background="@color/white">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idEditTaskTitle"
+        android:hint="task_title"
+        android:layout_margin="10dp"
+        android:textColorHint="#009688"/>
+
+    <EditText
+        android:id="@+id/idEditTaskDesc"
+        android:layout_width="407dp"
+        android:layout_height="175dp"
+        android:layout_above="@id/idTypeSelector"
+        android:layout_below="@+id/idEditTaskTitle"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="start|top"
+        android:hint="task_description"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColorHint="@color/white" />
+
+    <RadioGroup
+        android:id="@+id/idTypeSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idSetDate"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="163dp"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/radioPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal" />
+
+        <RadioButton
+            android:id="@+id/radioWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work" />
+
+        <RadioButton
+            android:id="@+id/radioSchool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/idSetDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idBtn"
+        android:padding="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="deadline:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/idSetTime"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idBtn"
+        android:layout_toEndOf="@id/idSetDate"
+        android:padding="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="time:"
+        android:textSize="20sp" />
+
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idBtn"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="text"
+        android:textAllCaps="false"
+        android:background="#009688"
+        />
+
+</RelativeLayout>

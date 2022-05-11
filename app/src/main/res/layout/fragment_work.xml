@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.WorkFragment"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Work"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:layout_marginLeft="160dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:id="@+id/work_tasks"
+        tools:listitem="@layout/task_item"
+        android:layout_marginBottom="50dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/work_tasks"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/idFABAddTask"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_add_circle_outline_24"
+        android:backgroundTint="#009688"
+        />
+
+</RelativeLayout>

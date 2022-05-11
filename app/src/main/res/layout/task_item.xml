@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#009688">
+
+    <RelativeLayout
+        android:id="@+id/idTaskItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTaskTitle"
+            android:text="Task_title"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@id/idUpdate"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idTimeStamp"
+            android:text="task_date"
+            android:textColor="@color/white"
+            android:layout_below="@id/idTaskTitle"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_toStartOf="@id/idUpdate"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idDescription"
+            android:text="task_description"
+            android:textColor="@color/white"
+            android:layout_below="@id/idTimeStamp"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@id/idUpdate"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idStatus"
+            android:layout_below="@+id/idDescription"
+            android:text="task_status"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idDelete"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idUpdate"
+            android:src="@drawable/ic_baseline_update_24"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_toStartOf="@+id/idDelete"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
